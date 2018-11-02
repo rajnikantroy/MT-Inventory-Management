@@ -1,0 +1,29 @@
+.myButton {
+	-moz-box-shadow:inset 1px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 0px 0px 0px #ffffff;
+	box-shadow:inset 1px 0px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #91accc) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #91accc 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#91accc');
+	background-color:#ededed;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	border:1px solid #09145c;
+	display:inline-block;
+	color:#291f29;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #91accc), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #91accc 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#91accc', endColorstr='#ededed');
+	background-color:#91accc;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}

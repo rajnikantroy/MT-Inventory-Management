@@ -1,0 +1,195 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body> 
+
+<link rel="stylesheet" type="text/css" href="Scripts/MyCSS.css" />
+    <link href="Scripts/textboxcss.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body
+{
+    background-image:url('/Inventory Management/Images/BodyBack.jpg');
+    background-repeat:repeat;
+    }
+    .style2
+    {
+        width: 201px;
+    }
+    .style3
+    {
+        width: 68px;
+    }
+    .style4
+    {
+        width: 9%;
+    }
+</style>
+    <form id="form1" runat="server">
+    <div>     
+    
+    <table width=100% border="0" frame="below" 
+            style="background-repeat: repeat-x; background-image: url('/Inventory Management/Images/upperBack.jpg')"  >
+    <tr>
+    <a href="Home.master">
+    <td width="55%" rowspan="2"> <h1 style="color: #FFFFFF">Easy Shoping 24*7 Hour Open</h1><br /> </td>    </a>
+     <td width="5%">
+        <asp:LinkButton ID="LinkButton4" ForeColor="White" runat="server" 
+            PostBackUrl="~/Default.aspx" Font-Bold="True">Home</asp:LinkButton>
+    </td>
+    <td width="5%">
+        <asp:LinkButton ID="LinkButton2" ForeColor="White" Font-Bold="True" 
+            runat="server" PostBackUrl="~/Admin.aspx">Account</asp:LinkButton></td>
+    
+        <td width="5%">
+        <asp:LinkButton ID="LinkButton7"  Font-Bold="True" ForeColor="White" runat="server" 
+                PostBackUrl="~/AddtoCart.aspx">Cart  </asp:LinkButton> </td>
+    <td width="5%"> 
+        <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White"  Font-Bold="True" 
+            PostBackUrl="~/LogInMain.aspx">SignIn</asp:LinkButton></td>
+    <td width="5%"> 
+        <asp:LinkButton ID="LinkButton8" runat="server" ForeColor="White"  Font-Bold="True" 
+            PostBackUrl="~/SignupMain.aspx">SignUp</asp:LinkButton></td>        
+    <td width="5%"> <asp:LinkButton ID="LinkButton6" runat="server" Font-Bold="True" 
+            ForeColor="White" onclick="LinkButton6_Click" Visible="False">Sign Out</asp:LinkButton>
+        </td>
+    </tr>
+    
+   <tr>
+   <td>&nbsp;</td>
+   </tr>             
+    </table> </div>
+    <center>
+    <table width="80%" border="2"
+            
+            
+            style=" background-repeat: repeat-x; background-image: url('/Inventory Management/Images/header.jpg');">
+            
+    <tr width="100%">
+    <td class="style3">
+    Search All Item :
+        </td>
+    <td class="style2">
+     <asp:TextBox ID="TextBox1" runat="server" CssClass="myTextBox" Height="22px" Width="44%" 
+            ontextchanged="TextBox1_TextChanged" align="left"></asp:TextBox>
+        &nbsp;</td>
+    
+    <td class="style4">
+    <div>   
+       
+            <asp:LinkButton ID="LinkButton3" CssClass="myButton" runat="server" 
+                Width="84px" onclick="LinkButton3_Click">Search</asp:LinkButton>
+ </div>
+    </td>
+     <td width="30%" >
+    
+         <asp:LinkButton ID="LinkButton5" align="right" CssClass="myButton" 
+             runat="server" PostBackUrl="~/AddtoCart.aspx">My Cart</asp:LinkButton>
+        </td>
+    </tr>
+    </table>
+    </center>
+    <center>
+    <table width="80%">
+    <tr width="100%">
+    <td colspan="2">
+        &nbsp;</td>
+    <td width="100%%">
+    
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+      
+        
+      
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+    </center>
+    <div>
+       
+    </div>
+       
+</body>
+<table border="5" width="100%" 
+        style="  background-image: url('/Inventory Management/Images/footer.jpg');background-repeat: repeat-x;">
+<tr width="100%">
+<td width="33%">
+<b>
+<asp:linkbutton runat="server" ForeColor="White" PostBackUrl="~/Default.aspx">Home</asp:linkbutton>
+</b><br />
+<b>
+<asp:linkbutton runat="server" ForeColor="White" PostBackUrl="~/AboutUs.aspx">About Us</asp:linkbutton>
+
+</b><br />
+<b>
+<asp:linkbutton runat="server" ForeColor="White" PostBackUrl="~/ContactUs.aspx">Contact Us</asp:linkbutton>
+
+</b><br />
+<b>
+<asp:linkbutton runat="server" ForeColor="White" 
+        PostBackUrl="~/CompanyProfile.aspx">Company Profile</asp:linkbutton>
+
+</b><br />
+</td>
+<td width="34%">
+<b>
+<asp:linkbutton runat="server"  ForeColor="White" PostBackUrl="~/SignUp.aspx">Company Registration</asp:linkbutton>
+
+</b><br />
+<b>
+<asp:linkbutton runat="server"  ForeColor="White" PostBackUrl="~/SignupUser.aspx">User Registration</asp:linkbutton>
+
+</b><br />
+<b>
+<asp:linkbutton runat="server"  ForeColor="White" PostBackUrl="~/AddtoCart.aspx">your Cart</asp:linkbutton>
+
+</b><br />
+<b>
+<asp:linkbutton runat="server" ForeColor="White" PostBackUrl="~/Admin.aspx">Your Dashboard</asp:linkbutton>
+
+</b><br />
+</td>
+<td width="33%">
+<b>
+<asp:linkbutton runat="server" ForeColor="White" 
+        PostBackUrl="http://dunyainfocom.blogspot.com">Dunya Infocom</asp:linkbutton>
+
+</b><br />
+<b>
+<asp:linkbutton runat="server" ForeColor="White" 
+        PostBackUrl="http://diinventory.blogspot.com">DI Inventory</asp:linkbutton>
+
+</b><br />
+<b>
+<asp:linkbutton runat="server" ForeColor="White" PostBackUrl="http://ditunes.com">DI Tunes</asp:linkbutton>
+
+
+</b><br />
+<b>
+<asp:linkbutton runat="server" ForeColor="White" 
+        PostBackUrl="diremotedesktop.blogspot.com">DI Remote Desktop</asp:linkbutton>
+</b><br />
+</td>
+</tr>
+
+</table>
+<table width="100%">
+<tr width="100%">
+<td width="100%">
+<center>
+<b>
+© Nikhil and Mukund | All Rights Reserved 2014.
+</b>
+
+</center>
+</td>
+</tr>
+</table>
+ </form>
+</html>

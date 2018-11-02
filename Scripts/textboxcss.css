@@ -1,0 +1,29 @@
+.myTextBox {
+	-moz-box-shadow:inset -3px 1px 0px 50px #ffffff;
+	-webkit-box-shadow:inset -3px 1px 0px 50px #ffffff;
+	box-shadow:inset -3px 1px 0px 50px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #f0f0f0) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #f0f0f0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#f0f0f0');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:2px solid #b351b3;
+	display:inline-block;
+	color:#171017;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:7px 76px;
+	text-decoration:none;
+	text-shadow:1px 0px 0px #ffffff;
+}.myTextBox:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f0f0f0), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #f0f0f0 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ededed');
+	background-color:#f0f0f0;
+}.myTextBox:active {
+	position:relative;
+	top:1px;
+}

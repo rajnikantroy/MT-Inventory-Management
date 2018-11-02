@@ -1,0 +1,31 @@
+.myCart {
+	-moz-box-shadow:inset -5px -1px 0px -50px #ffffff;
+	-webkit-box-shadow:inset -5px -1px 0px -50px #ffffff;
+	box-shadow:inset -5px -1px 0px -50px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #143e70), color-stop(1, #7bb1f7) );
+	background:-moz-linear-gradient( center top, #143e70 5%, #7bb1f7 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#143e70', endColorstr='#7bb1f7');
+	background-color:#143e70;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	border:1px solid #0f0e0f;
+	display:inline-block;
+	color:#000000;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 35px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #979ead;
+}
+.myCart:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7bb1f7), color-stop(1, #143e70) );
+	background:-moz-linear-gradient( center top, #7bb1f7 5%, #143e70 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7bb1f7', endColorstr='#143e70');
+	background-color:#7bb1f7;
+}
+.myCart:active {
+	position:relative;
+	top:1px;
+}
